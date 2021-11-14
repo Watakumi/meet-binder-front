@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { Footer } from '../layouts/Footer';
 import { Header } from '../layouts/Header';
 import { HeroContent } from '../layouts/HeroContent';
 
@@ -8,11 +9,12 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>MeetBinder</title>
-        <meta name="description" content="出会いが集まり広がる。" />
+        <meta name="description" content="出会いを集める。" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
       <HeroContent />
+      <Footer />
     </div>
   );
 };
