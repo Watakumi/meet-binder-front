@@ -27,7 +27,7 @@ export const Header = () => {
                     href="#_"
                     className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
                   >
-                    Start
+                    初めての方はこちら
                   </a>
                 </div>
                 <div className="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">
