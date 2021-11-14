@@ -10,19 +10,12 @@ export const Header = () => {
             <div className="flex items-center justify-start w-1/4 h-full pr-4">
               <a href="#_" className="inline-block py-4 md:py-0">
                 <span className="p-1 text-xl font-black leading-none text-gray-900">
-                  <span>tails</span>
-                  <span className="text-indigo-600">.</span>
+                  <span>MeetBinder</span>
                 </span>
               </a>
             </div>
             <div className="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex">
               <div className="flex-col w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
-                <a
-                  href="#_"
-                  className="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden"
-                >
-                  tails<span className="text-indigo-600">.</span>
-                </a>
                 <div className="flex flex-col items-start justify-center w-full space-x-6 text-center lg:space-x-8 md:w-2/3 md:mt-0 md:flex-row md:items-center">
                   <a
                     href="#_"
@@ -34,35 +27,7 @@ export const Header = () => {
                     href="#_"
                     className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
                   >
-                    Features
-                  </a>
-                  <a
-                    href="#_"
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
-                  >
-                    Blog
-                  </a>
-                  <a
-                    href="#_"
-                    className="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center"
-                  >
-                    Contact
-                  </a>
-                  <a
-                    href="#_"
-                    className="absolute top-0 left-0 hidden py-2 mt-6 ml-10 mr-2 text-gray-600 lg:inline-block md:mt-0 md:ml-2 lg:mx-3 md:relative"
-                  >
-                    <svg
-                      className="inline w-5 h-5"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                    </svg>
+                    Start
                   </a>
                 </div>
                 <div className="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">
