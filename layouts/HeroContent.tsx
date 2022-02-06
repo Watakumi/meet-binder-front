@@ -1,11 +1,11 @@
-import { PrimaryButton } from "./components/PrimaryButton";
+import { PrimaryButton } from '../components/PrimaryButton';
 
 export const HeroContent = () => {
   return (
-    <div className="container max-w-lg px-4 py-32 mx-auto text-left md:max-w-none md:text-center">
-      <h1 className="text-5xl font-extrabold leading-10 tracking-tight text-left text-gray-900 md:text-center sm:leading-none md:text-6xl lg:text-6xl">
+    <div className="container mx-auto max-w-lg px-4 py-32 text-left md:max-w-none md:text-center">
+      <h1 className="text-left text-5xl font-extrabold leading-10 tracking-tight text-gray-900 sm:leading-none md:text-center md:text-6xl lg:text-6xl">
         <span className="inline md:block">出会いを集める</span>{' '}
-        <span className="relative mt-2 text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-indigo-500 md:inline-block">
+        <span className="relative mt-2 bg-gradient-to-br from-indigo-600 to-indigo-500 bg-clip-text text-transparent md:inline-block">
           Let&apos;s Meet and Bind!
         </span>
       </h1>
@@ -14,11 +14,9 @@ export const HeroContent = () => {
         <br />
         最初の出会いが待っています。
       </div>
-      <div className="flex flex-col items-center mt-12 text-center">
+      <div className="mt-12 flex flex-col items-center text-center">
         <span className="relative inline-flex w-full md:w-auto">
-          <PrimaryButton>
-            Sign Up
-          </PrimaryButton>
+          <PrimaryButton>Sign Up</PrimaryButton>
         </span>
         <a href="#" className="mt-3 text-sm text-indigo-500">
           Sign In
