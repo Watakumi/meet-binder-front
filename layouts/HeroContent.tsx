@@ -1,3 +1,5 @@
+import { PrimaryButton } from "./components/PrimaryButton";
+
 export const HeroContent = () => {
   return (
     <div className="container max-w-lg px-4 py-32 mx-auto text-left md:max-w-none md:text-center">
@@ -14,13 +16,9 @@ export const HeroContent = () => {
       </div>
       <div className="flex flex-col items-center mt-12 text-center">
         <span className="relative inline-flex w-full md:w-auto">
-          <a
-            href="#_"
-            type="button"
-            className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-indigo-600 border border-transparent rounded-full md:w-auto hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
-          >
+          <PrimaryButton>
             Sign Up
-          </a>
+          </PrimaryButton>
         </span>
         <a href="#" className="mt-3 text-sm text-indigo-500">
           Sign In

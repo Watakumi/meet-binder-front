@@ -1,3 +1,5 @@
+import { PrimaryButton } from "./components/PrimaryButton";
+
 export const Header = () => {
   return (
     <section className="w-full px-6 pb-12 antialiased bg-white">
@@ -37,12 +39,9 @@ export const Header = () => {
                   >
                     Sign In
                   </a>
-                  <a
-                    href="#_"
-                    className="inline-flex items-center w-full px-6 py-3 text-sm font-medium leading-4 text-white bg-indigo-600 md:px-3 md:w-auto md:rounded-full lg:px-5 hover:bg-indigo-500 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring-indigo-600"
-                  >
-                    Sign Up
-                  </a>
+                  <PrimaryButton>
+                    SignUp
+                  </PrimaryButton>
                 </div>
               </div>
             </div>
