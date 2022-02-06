@@ -1,4 +1,4 @@
-import { PrimaryButton } from "./components/PrimaryButton";
+import { PrimaryButton } from "../components/PrimaryButton";
 
 export const Header = () => {
   return (
