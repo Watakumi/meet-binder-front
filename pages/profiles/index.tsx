@@ -2,6 +2,7 @@ import { GetStaticProps } from 'next';
 import * as React from 'react';
 import Link from 'next/link';
 import { ProfilePage } from '../../components/ProfilePage';
+import { ApplicationHeader } from '../../layouts/ApplicationHeader';
 
 export type Profile = {
   id: number;
@@ -15,6 +16,7 @@ const Profiles: React.FunctionComponent<{ profiles: Profile[] }> = ({
 }) => {
   return (
     <>
+      <ApplicationHeader />
       <ProfilePage />
       <div>
         <h1>Profiles</h1>
