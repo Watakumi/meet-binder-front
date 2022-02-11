@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
 import * as React from 'react';
 import Link from 'next/link';
-import { ProfileCard } from '../../components/ProfileCard';
+import { ProfilePage } from '../../components/ProfilePage';
 
 export type Profile = {
   id: number;
@@ -15,7 +15,7 @@ const Profiles: React.FunctionComponent<{ profiles: Profile[] }> = ({
 }) => {
   return (
     <>
-      <ProfileCard />
+      <ProfilePage />
       <div>
         <h1>Profiles</h1>
         <ul>
