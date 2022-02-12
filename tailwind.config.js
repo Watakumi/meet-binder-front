@@ -5,7 +5,15 @@ module.exports = {
     './layouts/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#010101',
+      },
+      fontFamily: {
+        jost: ['Jost', 'sans-serif'],
+        sen: ['Sen', 'sans-serif'],
+      },
+    },
   },
   variants: {
     extend: {},
