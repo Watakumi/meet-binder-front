@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div className="font-sen">
+    <div className="my-8 px-3 font-sen">
       <div>
         <p className="text-3xl font-bold">Watakumi</p>
         <p className="mt-1 text-lg font-medium text-gray-800">
