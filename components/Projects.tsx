@@ -1,7 +1,7 @@
-const Skills = () => {
+const Projects = () => {
   return (
-    <div className="my-8 px-3">
-      <p className="text-3xl">Skills</p>
+    <div className="my-8 px-3 font-sen">
+      <p className="text-3xl font-bold">Projects</p>
       <div className="my-8 flex flex-col items-center justify-center gap-10 sm:flex-row">
         <a
           className="h-[7rem] w-[14rem] cursor-pointer rounded-lg bg-slate-600 p-1 text-white duration-100 hover:scale-105"
@@ -29,4 +29,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Projects;
