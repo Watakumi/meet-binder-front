@@ -1,8 +1,10 @@
-export const ProjectDetail: React.FC = () => {
+type Props = {
+  description: string;
+};
+export const ProjectDetail: React.FC<Props> = ({ description }) => {
   return (
     <div>
-      <p>This is 1st ProjectDetail</p>
-      <p>Poped up by Click.</p>
+      <p>{description}</p>
     </div>
   );
 };
