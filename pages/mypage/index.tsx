@@ -1,5 +1,5 @@
 import React from 'react';
-import { About } from '../../components/About';
+import { About } from '../../components/About/About';
 import Projects from '../../components/Projects/Projects';
 import Skills from '../../components/Skills/Skills';
 const Mypage: React.FunctionComponent = () => {
