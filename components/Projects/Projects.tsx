@@ -72,7 +72,12 @@ const Projects = () => {
         ))}
       </div>
       <div>
-        {project && <ProjectDetail description={project.detail.description} />}
+        {project && (
+          <ProjectDetail
+            description={project.detail.description}
+            onClick={() => setOpendId(-1)}
+          />
+        )}
       </div>
     </div>
   );
