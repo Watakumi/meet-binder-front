@@ -3,13 +3,13 @@ export const Menu = () => {
     <div className="flex flex-row items-center justify-center text-center">
       <a
         href="#"
-        className="mx-3 inline-block w-auto py-2 text-gray-700 hover:text-indigo-600"
+        className="cursor-pointer rounded-md px-4 py-[0.10rem] text-xl text-zinc-800 duration-100 hover:bg-zinc-800 hover:text-white"
       >
         Home
       </a>
       <a
         href="#"
-        className="mx-3 inline-block w-auto py-2 text-gray-700 hover:text-indigo-600"
+        className="cursor-pointer rounded-md px-4 py-[0.10rem] text-xl text-zinc-800 duration-100 hover:bg-zinc-800 hover:text-white"
       >
         Friends
       </a>
