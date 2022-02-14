@@ -36,7 +36,7 @@ type Props = {
       skills: Skill[];
       interests: Skill[];
       projects: Project[];
-      contact: {
+      contacts: {
         name: string;
         url: string;
       }[];
@@ -54,7 +54,7 @@ const Mypage: React.FunctionComponent<Props> = ({ data }) => {
       <About name={name} company={company} bio={bio} />
       <Skills skills={skills} interests={interests} />
       <Projects projects={projects} />
-      <Contact />
+      <Contact contacts={contacts} />
     </div>
   );
 };
