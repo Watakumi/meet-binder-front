@@ -2,9 +2,9 @@ import Link from 'next/link';
 import React from 'react';
 import { AiOutlineTwitter } from './Icon';
 
-const TwitterLink: React.FC = () => {
+const TwitterLink: React.FC<{ url: string }> = ({ url }) => {
   return (
-    <Link href="https://github.com/Watakumi" passHref>
+    <Link href={url} passHref>
       <a
         target="_blank"
         rel="noopener noreferrer"

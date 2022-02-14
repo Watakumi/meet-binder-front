@@ -2,9 +2,9 @@ import Link from 'next/link';
 import React from 'react';
 import { AiOutlineGithub } from './Icon';
 
-const GithubLink: React.FC = () => {
+const GithubLink: React.FC<{ url: string }> = ({ url }) => {
   return (
-    <Link href="https://github.com/Watakumi" passHref>
+    <Link href={url} passHref>
       <a
         target="_blank"
         rel="noopener noreferrer"
