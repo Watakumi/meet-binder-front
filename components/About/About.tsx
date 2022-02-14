@@ -1,13 +1,18 @@
 import Image from 'next/image';
-export const About = () => {
+
+type Props = {
+  name: string;
+  company: string;
+  bio: string;
+};
+
+export const About: React.FC<Props> = ({ name, company, bio }) => {
   return (
     <div className="my-8 flex flex-row items-center justify-between px-3 font-sen">
       <div>
-        <p className="text-3xl font-bold">Watakumi</p>
-        <p className="mt-1 text-lg font-medium text-gray-800">
-          SigntVisit Inc.
-        </p>
-        <p className="mt-4 text-gray-600">This is a test description.</p>
+        <p className="text-3xl font-bold">{name}</p>
+        <p className="mt-1 text-lg font-medium text-gray-800">{company}</p>
+        <p className="mt-4 text-gray-600">{bio}</p>
       </div>
       <div>
         <Image
