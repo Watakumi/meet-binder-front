@@ -14,7 +14,7 @@ const Mypage: React.FunctionComponent<any> = ({ data }) => {
     <div className="px-2 sm:px-8 md:px-24 lg:px-48 xl:px-72">
       <Header />
       <About name={name} company={company} bio={bio} />
-      <Skills />
+      <Skills skills={skills} interests={interests} />
       <Projects />
       <Contact />
     </div>
