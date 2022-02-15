@@ -1,5 +1,5 @@
 import { Header } from '../../components/Header/Header';
-import { TextForm, EmailForm } from '../../components/Settings';
+import { TextForm, EmailForm, Textarea } from '../../components/Settings';
 
 const UserSettings: React.FunctionComponent = () => {
   return (
@@ -8,6 +8,8 @@ const UserSettings: React.FunctionComponent = () => {
       <div className="my-8 grid grid-cols-1 gap-6 px-3 font-sen">
         <TextForm name="Name" />
         <EmailForm />
+        <TextForm name="Company" />
+        <Textarea labelName="Bio" />
       </div>
     </div>
   );
