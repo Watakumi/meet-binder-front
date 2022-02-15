@@ -1,10 +1,10 @@
-const EmailForm = () => {
+const TextForm = ({ name }: { name: string }) => {
   return (
     <form>
       <label>
-        Email:
+        {name}:
         <input
-          type="email"
+          type="text"
           className="
                     mt-1
                     block
@@ -14,10 +14,9 @@ const EmailForm = () => {
                     bg-gray-100
                     focus:border-gray-500 focus:bg-white focus:ring-0
                   "
-          placeholder="sample@meetbinder.com"
         />
       </label>
     </form>
   );
 };
-export default EmailForm;
+export default TextForm;
