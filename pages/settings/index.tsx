@@ -4,6 +4,7 @@ import {
   EmailForm,
   Textarea,
   SkillForm,
+  ProjectForm,
 } from '../../components/Settings';
 
 const UserSettings: React.FunctionComponent = () => {
@@ -17,6 +18,8 @@ const UserSettings: React.FunctionComponent = () => {
         <Textarea labelName="Bio" />
         <p className="text-2xl">Skills</p>
         <SkillForm />
+        <p className="text-2xl">Projects</p>
+        <ProjectForm />
       </div>
     </div>
   );
