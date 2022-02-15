@@ -2,6 +2,7 @@ import GithubLink from '../GithubLink';
 import TwitterLink from '../TwitterLink';
 
 type Contact = {
+  id: number;
   name: string;
   url: string;
 };
