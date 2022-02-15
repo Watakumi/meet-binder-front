@@ -1,5 +1,10 @@
 import { Header } from '../../components/Header/Header';
-import { TextForm, EmailForm, Textarea } from '../../components/Settings';
+import {
+  TextForm,
+  EmailForm,
+  Textarea,
+  SkillForm,
+} from '../../components/Settings';
 
 const UserSettings: React.FunctionComponent = () => {
   return (
@@ -10,6 +15,8 @@ const UserSettings: React.FunctionComponent = () => {
         <EmailForm />
         <TextForm name="Company" />
         <Textarea labelName="Bio" />
+        <p className="text-2xl">Skills</p>
+        <SkillForm />
       </div>
     </div>
   );

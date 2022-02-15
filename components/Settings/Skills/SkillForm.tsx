@@ -5,10 +5,12 @@ const SkillForm = () => {
     <div>
       <label>
         Name: Description
-        <Item />
-        <Item />
-        <Item />
-        <Item />
+        <div className="grid grid-cols-1 gap-4">
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+        </div>
       </label>
     </div>
   );
