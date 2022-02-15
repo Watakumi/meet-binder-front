@@ -17,6 +17,7 @@ type Project = {
 };
 
 type Skill = {
+  id: number;
   name: string;
   description: string;
 };
@@ -37,6 +38,7 @@ type Props = {
       interests: Skill[];
       projects: Project[];
       contacts: {
+        id: number;
         name: string;
         url: string;
       }[];
