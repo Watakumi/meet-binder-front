@@ -6,27 +6,28 @@ export function getAllData() {
       bio: 'This is Watakumi profile.',
       skills: [
         {
+          id: 1,
           name: 'NestJS',
           description: '実務経験あり。2年ほど開発していた。',
         },
         {
+          id: 2,
           name: 'NextJS',
           description: '実務経験あり。もっとも経験のあるフレームワーク。',
         },
         {
+          id: 3,
           name: 'Rails',
           description: '実務経験あり。ライブラリの開発も可能',
         },
       ],
       interests: [
         {
+          id: 1,
           name: 'Rust',
           description: 'もっとも興味のある言語',
         },
-        {
-          name: 'Python',
-          description: 'AIの学習がしたい',
-        },
+        { id: 2, name: 'Python', description: 'AIの学習がしたい' },
       ],
       projects: [
         {
@@ -79,14 +80,8 @@ export function getAllData() {
         },
       ],
       contacts: [
-        {
-          name: 'github',
-          url: 'https://github.com/Watakumi',
-        },
-        {
-          name: 'twitter',
-          url: 'https://github.com/Watakumi',
-        },
+        { id: 1, name: 'github', url: 'https://github.com/Watakumi' },
+        { id: 2, name: 'twitter', url: 'https://github.com/Watakumi' },
       ],
     },
   };
