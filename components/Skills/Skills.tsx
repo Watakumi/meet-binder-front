@@ -1,6 +1,7 @@
 import { Item } from './Item';
 
 type Skill = {
+  id: number;
   name: string;
   description: string;
 };
@@ -10,12 +11,12 @@ const Skills: React.FC<{ skills: Skill[]; interests: Skill[] }> = ({
 }) => {
   return (
     <div className="my-16 px-3 font-sen" id="skills">
-      <p className="text-3xl font-bold">Skills & Uses</p>
+      <p className="text-3xl font-bold">Skills</p>
 
       <div className="text-md custom:text-lg my-8 flex flex-col font-medium md:text-xl">
         {skills.map((skill) => (
           <Item
-            key={skill.name}
+            key={skill.id}
             name={skill.name}
             description={skill.description}
           />
@@ -26,7 +27,7 @@ const Skills: React.FC<{ skills: Skill[]; interests: Skill[] }> = ({
       <div className="text-md custom:text-lg my-2 flex flex-col font-medium md:text-xl">
         {interests.map((interest) => (
           <Item
-            key={interest.name}
+            key={interest.id}
             name={interest.name}
             description={interest.description}
           />
