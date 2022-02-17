@@ -1,4 +1,14 @@
+import { useRef, useState } from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 const ProjectForm = () => {
+  const markdownRef = useRef<HTMLTextAreaElement>(null);
+  type markdownType = string | undefined;
+  const [markdown, setMarkdown] = useState<markdownType>('');
+  const handleChange = () => {
+    setMarkdown(markdownRef.current?.value);
+  };
+
   return (
     <div className="grid grid-cols-1 gap-4">
       <div className="flex flex-row items-center justify-start gap-8">
@@ -57,6 +67,36 @@ const ProjectForm = () => {
           focus:border-gray-500 focus:bg-white focus:ring-0
         "
         />
+      </div>
+      <div className="border-md rounded-md border-[0.1px]">
+        <ul className="mt-2 flex flex-row gap-2 px-2" role="tablist">
+          <li className="">
+            <a className="px-4 py-2 hover:bg-gray-100">Write</a>
+          </li>
+          <li className="">
+            <a className="px-4 py-2 hover:bg-gray-100" onClick={handleChange}>
+              Preview
+            </a>
+          </li>
+        </ul>
+        <textarea
+          ref={markdownRef}
+          className="
+          mt-2
+          h-48
+          w-full
+          rounded-md
+          border-transparent
+          bg-gray-100
+          focus:border-gray-500 focus:bg-white focus:ring-0"
+        />
+        <div id="preview">
+          {markdown && (
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+              {markdown}
+            </ReactMarkdown>
+          )}
+        </div>
       </div>
     </div>
   );
