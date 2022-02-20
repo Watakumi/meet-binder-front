@@ -20,3 +20,37 @@ a {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.markdown ol {
+  @apply list-inside list-decimal;
+}
+.markdown ul {
+  @apply list-inside list-disc;
+}
+
+.markdown li {
+  @apply list-inside list-disc;
+}
+
+.markdown .task-list-item {
+  @apply list-none;
+}
+
+.markdown a {
+  @apply text-sky-500 underline decoration-solid;
+}
