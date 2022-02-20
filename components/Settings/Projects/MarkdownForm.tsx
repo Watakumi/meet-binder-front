@@ -1,6 +1,7 @@
 import { CSSProperties, useEffect, useRef, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import emoji from 'remark-emoji';
 
 type markdownType = string | undefined;
 
@@ -67,11 +68,11 @@ const MarkdownForm = () => {
         />
         <div
           id="preview-1"
-          className="mt-4 h-48 w-full rounded-md border-[1px] border-transparent px-3 py-2"
+          className="markdown mt-4 h-48 w-full rounded-md border-[1px] border-transparent px-3 py-2"
           style={previewStyles}
         >
           {markdown && (
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            <ReactMarkdown remarkPlugins={[remarkGfm, emoji]}>
               {markdown}
             </ReactMarkdown>
           )}
